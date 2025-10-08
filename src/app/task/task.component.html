@@ -1,0 +1,17 @@
+<ul>
+    <ng-container *ngTemplateOutlet="nodeT; context: { $implicit: root }"></ng-container>
+</ul>
+
+<ng-template #nodeT let-node>
+    <li>
+        {{ node }}
+        <ng-container *ngIf="getChildren(node) as list">
+            <ul>
+                <ng-container *ngFor="let child of list">
+                    <ng-container *ngTemplateOutlet="nodeT; context: { $implicit: child }">
+                    </ng-container>
+                </ng-container>
+            </ul>
+        </ng-container>
+    </li>
+</ng-template>
