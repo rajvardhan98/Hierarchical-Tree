@@ -1,2 +1,4 @@
-# Hierarchical-Tree
-Angular component that takes a tree-like data structure (key → children array) and displays it as a properly indented hierarchy using nested &lt;ul> and &lt;li> lists.
+# Hierarchical-Tree-Assignment
+ Name: Raj Vardhan Singh
+ Phone number: +91 8439560765
+ UPI Id: 8439560765@upi
